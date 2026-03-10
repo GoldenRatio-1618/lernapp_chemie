@@ -51,14 +51,14 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
   final Map<String, List<Map<String, dynamic>>> kapitelKarten = {
     'Einführung und PSE': [
 		{'frage': 'Vergleich der Atomradien mit den Radien der stabilsten Ionen', 
-		'antwort': 'Kationen der ersten zwei Hauptgruppen sind deutlich kleiner als ihre neutrale atomare Form. \n'
-		'Anionen der sechsten und siebten Hauptgruppe sind deutlich größer als ihre atomare Form. ', 'gemerkt': false},
+		'antwort': 'Kationen sind deutlich kleiner als ihre neutrale atomare Form. \n'
+		'Anionen sind deutlich größer als ihre atomare Form. ', 'gemerkt': false},
 		
 		{'frage': 'Die Entstehung des Periodensystems',
 		'antwort': 'Das Periodensystem wurde 1869 von Dmitri Mendelejev erstmals veröffentlicht. ' 
-		'Es bestand aus den damals bekannten 63 Elementen, die nach Atommasse aufsteigend angeordnet waren. ' 
-		'Es enthielt noch Lücken für unbekannte Elemente, deren Eigenschaften Mendelejev bereits vorhersagen konnte. '
-		'Unabhänig davon entwickelte Lothar Meyer ebenfalls das Periodensystem, welches er kurz nach Mendelejev veröffentlichte. \n'
+		'Es bestand aus den damals bekannten 63 Elementen - die Edelgase waren damals beispielsweise noch nicht entdeckt -, die nach ihrer Atommasse aufsteigend angeordnet waren. ' 
+		'Es enthielt noch Lücken für unbekannte Elemente, deren Eigenschaften Mendelejev bereits teilweise vorhersagen konnte. '
+		'Unabhängig davon entwickelte Lothar Meyer ebenfalls das Periodensystem, das er kurz nach Mendelejev veröffentlichte. \n'
 		'Seither wurde das PSE immer weiter ergänzt. ', 'gemerkt': false},
 		
 		{'frage': 'Die Ordnungszahl',
@@ -72,7 +72,7 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		'Nicht alle Elemente besitzen ein stabiles Nuklid, sodass einige natürlich vorkommende Elemente die Zerfallsprodukte anderer sind. ', 'gemerkt': false},
 		
 		{'frage': 'Isotope',
-		'antwort': 'Isotope sind unterschiedliche Ausprägungen des selben Elements. Sie unterscheiden sich in der Anzahl der Neutronen. '
+		'antwort': 'Isotope sind unterschiedliche Ausprägungen des selben Elements. Sie unterscheiden sich in der Anzahl ihrer Neutronen. '
 		'Da auch die Neutronen zu der Masse des Atoms beitragen, kommen daher Atome unterschiedlicher Massen des selben Elements vor. '
 		'Die im Periodensystem angegebene Massenzahl entspricht daher dem gewichteten Mittelwert aller Isotope eines Elements. \n'
 		'Die Isotope eines Elements kommen nicht in der selben Menge vor. Bei den meisten Elementen gibt es ein besonders stabiles Isotop, '
@@ -88,21 +88,21 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		'antwort': 'Aus den Lösungen der Schrödiger-Gleichung entstehende Wahrscheinlichkeitsverteilungen der Elektronen um den Atomkern.  ', 'gemerkt': false},
 		
 		{'frage': 'Die Gruppen',
-		'antwort': 'Die Spalten im Periodensystem werden als Gruppen bezeichnet.\nEs gibt acht Hauptgruppen. Die aus dem s- und dem p-Block bestehen.\n'
+		'antwort': 'Die Spalten im Periodensystem werden als Gruppen bezeichnet.\nEs gibt acht Hauptgruppen, die aus dem s- und dem p-Block bestehen.\n'
 		'Zudem gibt es zehn Nebengruppen im d-Block und 14 Nebengruppen im f-Block (Lanthanoide und Actinoide). \n'
-		'Die Elemente einer Gruppe weißen ähnliche chemische Eigenschaften auf, da die Anzahl der Valenzelektronen hierfür bestimmend ist. '
+		'Die Elemente einer Gruppe weisen ähnliche chemische Eigenschaften auf, da die Anzahl der Valenzelektronen hierfür bestimmend ist. '
 		'Die Elemente einer Gruppe besitzen die gleiche Valenzelektronenkonfiguration.', 'gemerkt': false},
 		
 		{'frage': 'Die Ionisierungsenergie',
 		'antwort': 'Die Elektronen eines Atoms lassen sich durch Energiezufuhr entfernen. Das erste Elektron lässt sich noch mit einer vergleichsmäßig geringen '
-		'Energiezufuhr entfernen in Relation zu den weiteren Elektronen. Jedes entfernte Elektron destabilisiert das Ion weiter, da die Ladungsungleichheit '
-		'weiter ansteigt. Die Protonen im Kern bleiben erhalten. \nDie Atome einer Gruppe lassen sich ähnlich gut oder schlecht Ionisieren. '
-		'Je höher die Hauptgruppennummer, desto mehr Energie muss zugeführt werden. Die Edelgaskonfiguration ist erstrebenswert, da sie am energetisch günstigsten ist. \n'
+		'Energiezufuhr entfernen in Relation zu weiteren Elektronen. Jedes entfernte Elektron destabilisiert das Ion weiter, da die Ladungsungleichheit '
+		'weiter ansteigt. Die Protonen im Kern bleiben erhalten. \nDie Atome einer Gruppe lassen sich ähnlich gut oder schlecht ionisieren. '
+		'Je höher die Hauptgruppennummer, desto weniger Energie muss zugeführt werden. Die Edelgaskonfiguration ist erstrebenswert, da sie am energetisch günstigsten ist. \n'
 		'Die Ionisierungsenergie beschreibt daher die Menge an Energie, die zugeführt werden muss, um das Atom zu ionisieren.', 'gemerkt': false},
 		
 		{'frage': 'Metallischer Charakter',
 		'antwort': 'Metalle besitzen einige typische charakteristische Eigenschaften. \n'
-		'Metalle sind meist glänzend, da sie das Licht reflektieren. Metalle weißen eine gute Leitfähigkeit von Wärme und elektrischer Energie auf. '
+		'Metalle sind meist glänzend, da sie das Licht reflektieren. Metalle weisen gute Leitfähigkeit von Wärme und elektrischer Energie auf. '
 		'Mit steigender Temperatur dehnen sich Metalle aus. Viele Metalle sind duktil und lassen sich gut verformen. ', 'gemerkt': false},
 		
 		{'frage': 'Die Elektronegativität',
@@ -110,101 +110,101 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		'Die elektronegativsten Elemente sitzen oben rechts im Periodensystem. Das elektronegativste Element ist Fluor, gefolgt von Sauerstoff, Stickstoff und Chlor. \n'
 		'Die Differenz der Elektronegativitäten der beteiligten Atome einer Verbindung bestimmt die Art der Bindung. \n'
 		'Im Allgemeinen ergeben sich folgende ungefähre Tendenzen: Bei einer Differenz von weniger als 0,4 bildet sich eine unpolare Bindung aus. '
-		'Bei einer Differenz zwischen 0,4 und 1,6 wir die Bindung einen polaren Charakter aufweisen, ab 1,7 wird die Bindung zunehmend ionischer.', 'gemerkt': false},
+		'Bei einer Differenz zwischen 0,4 und 1,6 wird die Bindung einen polaren Charakter aufweisen, ab 1,7 ist die Bindung vornehmlich ionisch.', 'gemerkt': false},
 
 		{'frage': 'Grundprinzip Molekülorbitaltheorie (MO-Theorie)',
-		'antwort': 'Molekülorbitale bilden sich indem sich Atomorbitale überlappen. Diese sind delokalisiert. '
+		'antwort': 'Molekülorbitale bilden sich, indem Atomorbitale überlappen. Die Anzahl der resultierenden Molekülorbitale entspricht der Anzahl der beteiligten Atomorbitale. '
 		'Die Molekülorbitale werden nach dem Pauli‑Prinzip und der Hund‑Regel mit Elektronen gefüllt.\n'
 		'Es gibt σ- und π-Molekülorbitale:\n'
 		'- σ: Elektronendichte entlang der Kernverbindungsachse, rotationssymmetrisch\n'
-		'- π: Elektronendichte oberhalb/unterhalb der Achse, entstehen aus seitlicher Überlappung\n'
+		'- π: Elektronendichte oberhalb/unterhalb der Achse, entstehen aus seitlicher Überlappung parallel zueinander stehender Atomorbitale.\n'
 		'Es gibt bindende und antibindende Molekülorbitale:\n'
 		'- Bindend (σ, π): konstruktive Überlappung, erhöhte Elektronendichte zwischen den Kernen, energieärmer\n'
 		'- Antibindend (σ*, π*): destruktive Überlappung, Knotenebene zwischen den Kernen, energiereicher', 'gemerkt': false},
 		
 		{'frage': 'Paramagnetische Moleküle oder diamagnetische Moleküle',
-		'antwort': 'Sind in den Molekülorbitalen ungepaarte Elektronen vorhanden, ist das Molekül paramagnetisch.\n'
+		'antwort': 'Sind in einem oder mehreren Molekülorbitalen ungepaarte Elektronen vorhanden, ist das Molekül paramagnetisch.\n'
 		'Liegen in den Molekülorbitalen alle Elektronen gepaart vor, ist das Molekül diamagnetisch.', 'gemerkt': false},
 		
 		{'frage': 'Die Knotenebene im Orbital',
-		'antwort': 'Die Knotenebene ist der Bereich, in dem die Elektronen eine Aufenthaltswahrscheinlichkeit von null aufweisen.\n'
-		'Mit steigender Knotenanzahl steigt auch die Energie.', 'gemerkt': false},
+		'antwort': 'Die Knotenebene ist der Bereich, in dem die Elektronen eine Aufenthaltswahrscheinlichkeit von null aufweisen beziehungsweise die zugehörige Wellenfunktion einen Nulldurchgang aufweist.\n'
+		'Mit steigender Anzahl der Knotenebenen innerhalb eines Orbitals steigt auch dessen Energie.', 'gemerkt': false},
 		
 		{'frage': 'HOMO und LUMO',
-		'antwort': 'HOMO (Highest Occupied Molecular Orbital): Höchst besetzte Molekülorbital: '
+		'antwort': 'HOMO (Highest Occupied Molecular Orbital): Energetisch höchstes mit Elektronen besetztes Molekülorbital: '
 		'Enthält die Elektronen, die am einfachsten angeregt/ abgegeben werden können.\n'
-		'LUMO (Lowest Unoccupied Molecular Orbital): Niedrigst unbesetzte Molekülorbital: '
-		'Nimmt die angeregten Elektronen auf.', 'gemerkt': false},
+		'LUMO (Lowest Unoccupied Molecular Orbital): Energetisch niedrigstes unbesetztes Molekülorbital: '
+		'Kann die angeregten Elektronen aufnehmen.', 'gemerkt': false},
 
 	],
 
   'Alkalimetalle': [
 
-    {'frage': 'Die Alkalimetalle',
-		'antwort': 'Die Alkalimetalle umfassen die Elemente der ersten Hauptgruppe (IUPAC Gruppe 1). '
-    'Diese Gruppe beinhaltet die Elemente Wasserstoff (H), Lithium (Li), Natrium (Na), Kalium (K), Rubidium (Rb), Caesium (Cs) und Francium (Fr).', 'gemerkt': false},
+		{'frage': 'Die Alkalimetalle',
+		'antwort': 'Die Alkalimetalle umfassen die metallischen Elemente der ersten Hauptgruppe (IUPAC Gruppe 1). '
+		'Diese Gruppe beinhaltet die Elemente Lithium (Li), Natrium (Na), Kalium (K), Rubidium (Rb), Caesium (Cs) und Francium (Fr).', 'gemerkt': false},
 		
 		{'frage': 'Massendefekt',
 		'antwort': 'Der Massendefekt ist die Differenz zwischen der Summe aller Nukleonenmassen eines Atoms und der tatsächlichen Masse des Atoms. '
 		'Ursächlich hierfür ist die freiwerdende Energie bei der Kernbindung. Da zwischen Energie und Masse eine Äquivalenzrelation besteht, '
 		'entspricht der Massendefekt der freiwerdenden Energie. \n'
-		'Da die Kernbindungskräfte deutlich stärker als die Elektronenanziehungskräfte sind, entspricht der Massendefekt der Kernbindungsenergie.', 'gemerkt': false}, 
+		'Da die Kernbindungskräfte deutlich stärker als etwa die Elektronenanziehungskräfte sind, entspricht der Massendefekt der Kernbindungsenergie.', 'gemerkt': false}, 
 		
 		{'frage': 'Die Gitterenergie',
-		'antwort': 'Die Gitterenergie ist die Energie, die freigesetzt wird, wenn bei 0 K ein Mol einer kristallinen Verbindung zusammengesetzt wird. '
+		'antwort': 'Die Gitterenergie ist die Energie, die freigesetzt wird, wenn bei (theoretischen) 0 K ein Mol einer kristallinen Verbindung zusammengesetzt wird. '
 		'Die Zusammensetzung erfolgt dabei aus den zuvor unendlich voneinander entfernten Bestandteilen (Atome, Moleküle, Ionen). ', 'gemerkt': false}, 
 		
 		{'frage': 'Die Elementarzelle',
 		'antwort': 'Die Elementarzelle ist die kleineste Baueinheit eines Kristalls. '
 		'Ein theoretischer Kristall besteht aus lückenlosen Aneinanderreihungen der immer gleichen Elementarzelle. '
-		'Die Verteilung der Atome innerhalb der Elementarzelle ist dabei abhänig von den Größenrelationen der beteiligten Atome. '
+		'Die Verteilung der Atome innerhalb der Elementarzelle ist dabei abhängig von den Größenrelationen der beteiligten Atome. '
 		'Die Zuordung der Atome zu einer Zelle erfolgt dabei so, dass keine Stelle mehrfach besetzt ist. '
 		'Daher werden die Atome an den Ecken der würfelförmigen Elementarzelle auch allen beteiligten acht Elementarzellen zugesprochen, '
 		'sodass eine Zelle immer nur ein achtel des Atoms je Ecke zugesprochen bekommt. '
-		'Besteht nun eine Elementarzelle nur aus den vier Atomen an den Ecken des Würfels, wird sie als kubisch bezeichnet '
-		'und besitzt eine Wertigkeit von eins (acht Ecken mit je Wertigkeit ein achtel). \n' 
-		'Befindet sich in der Mitte der Elementarzelle ein ganzes Atom, wird sie als kubisch-raumzentriert Bezeichnet. '
+		'Besteht eine Elementarzelle nur aus den acht Atomen an den Ecken des Würfels, wird sie als kubisch-primitiv bezeichnet '
+		'und enthält effektv ein Atom (acht Ecken mit je Wertigkeit ein achtel). \n' 
+		'Befindet sich in der Mitte der Elementarzelle zudem ein ganzes Atom, wird sie als kubisch-raumzentriert bezeichnet. '
 		'Eine kubisch-raumzentrierte Elementarzelle hat eine Wertigkeit von zwei (acht Ecken mit je Wertigkeit ein achtel und eines in der Mitte). \n'
-		'Sitzen neben den Ecken auch Atome auf den Flächen des Würfels, wird die Zelle als kubisch-flächenzentriert bezeichent. '
+		'Sitzen neben den Ecken auch Atome auf allen Flächen des Würfels, wird die Zelle als kubisch-flächenzentriert oder kubisch-dichtest bezeichent. '
 		'Ein auf der Fläche sitzendes Atom ist zur Hälfte in der Elementarzelle vorhanden, daher ist die Wertigkeit bei dieser Bauart vier. \n'
-		'Liegt die Elementarzelle als Hexagonalprisma vor, nennt man sie hexagonal dichtest gepackt. '
+		'Liegt die Elementarzelle als Hexagonalprisma vor, nennt man sie hexagonal-dichtest gepackt. '
 		'Dabei zählen die zwölf Atome der Ecken zu je einem sechstel, das auf jeder Hexagonseite liegende Atom zur Hälfte '
 		'und die drei innerhalb des Prismas liegenden Atome vollständig, sodass insgesamt sechs Atome in einer hexagonal dichtest gepackten Kugelpackung vorzufinden sind. ', 'gemerkt': false},
 		
 		{'frage': 'Die Schmelzflusselektrolyse',
-		'antwort': 'Die Gewinnung der Alkalimetalle erfolgt meist durch eine Schmelzflusselektrolyse ihrer Salze. '
-		'Da Alkalimetalle ein deutlich negativeres elektrochemisches Potential als Wasser besitzen, ist eine Elektrolyse der wässrigen Lösungen nicht möglich. \n'
-		'Das Salz wird aufgeschmolzen und die Metallkationen können an der Kathode zu elementarem Metall reduziert werden.', 'gemerkt': false},
+		'antwort': 'Die Gewinnung der Alkalimetalle erfolgt meist durch Schmelzflusselektrolyse ihrer Salze. '
+		'Da Alkalimetalle ein deutlich negativeres elektrochemisches Potential als Wasser besitzen, führt die Elektrolyse der wässrigen Lösungen nicht zur Abscheidung der elementaren Metalle. \n'
+		'Das Salz wird aufgeschmolzen, und die Metallkationen können an der Kathode zu elementarem Metall reduziert werden.', 'gemerkt': false},
 		
 		{'frage': 'Reaktionen der Alkalimetalle',
-		'antwort': 'Alkalimetalle (Alm) reagieren mit Sauerstoff (O₂) zu Oxiden: 4Alm + O₂ → 2Alm₂O \n'
-		'Kalium, Rubidium und Caesium reagieren mit Sauerstoff zu Superoxiden: K/ Rb/ Cs + O₂ → KO₂/ RbO₂/ CsO₂ \n'
-		'Alkalimetalle (Alm) reagieren mit Wasserstoff (H₂) zu Hydriden: 2Alm + H₂ → 2AlmH \n'
-		'Alkalimetalle (Alm) bilden mit Halogenen (X) Salze: 2Alm + X₂ → 2AlmX', 'gemerkt': false},
+		'antwort': 'Alkalimetalle (Me) reagieren mit Sauerstoff (O₂) zu Oxiden: 4 Me + O₂ → 2 Me₂O \n'
+		'Kalium, Rubidium und Caesium reagieren mit Sauerstoff im Überschuss zu Superoxiden: K/ Rb/ Cs + O₂ → KO₂/ RbO₂/ CsO₂ \n'
+		'Alkalimetalle (Me) reagieren mit Wasserstoff (H₂) zu Hydriden: 2 Me + H₂ → 2 MeH \n'
+		'Alkalimetalle (Me) bilden mit Halogenen (X) Salze: 2 Me + X₂ → 2 MeX', 'gemerkt': false},
 		
 		{'frage': 'Das Solvay-Verfahren - die Herstellung von Soda',
 		'antwort': 'Das Solvay-Verfahren ist ein großtechnisches Verfahren zur Herstellung von Soda (Natriumcarbonat, Na₂CO₃) '
 		'aus Kochsalz (NaCl), Ammoniak (NH₃) und Kohlendioxid (CO₂). \nAmmoniak wird unter Kühlung in eine wässrige, gesättigte Natriumchlorid-Lösung eingeleitet. '
 		'Die dabei entstehende Lauge wird mit Kohlendioxid gesättigt. Dabei entstehen in der Lösung aus Ammoniak und Kohlendioxid Ammoniumhydrogencarbonat (NH₄HCO₃). '
-		'Das Ammoniumhydrogencarbonat reagiert mit dem Natriumchlorid und Natriumhydrogencarbonat (NaHCO₃) fällt aus. '
-		'Das ausgefallene Natriumhydrogencarbonat wird abfiltriert und erhitzt, dabei zerlegt es sich in das gewünschte Natriumcarbonat, '
+		'Das Ammoniumhydrogencarbonat reagiert mit dem Natriumchlorid, Natriumhydrogencarbonat (NaHCO₃) fällt aus. '
+		'Das ausgefallene Natriumhydrogencarbonat wird abfiltriert und erhitzt, dabei zerfällt es zum gewünschten Natriumcarbonat, '
 		'desweiteren entstehen Wasser und Kohlendioxid. \n'
 		'NH₃ + CO₂ + H₂O → NH₄HCO₃ \n' 
 		'NH₄HCO₃ + NaCl → NH₄Cl + NaHCO₃ \n' 
-		'2NaHCO₃ → Na₂CO₃ + H₂O + CO₂', 'gemerkt': false},
+		'2 NaHCO₃ → Na₂CO₃ + H₂O + CO₂', 'gemerkt': false},
 		
 		{'frage': 'Die Herstellung von Natronlauge',
 		'antwort': 'Natronlauge wird industriell durch Elektrolyse einer wässrigen Lösung von Natriumchlorid hergestellt. \n'
 		'Dabei ist es wichtig, dass die Elektrodenbereiche voneinander getrennt werden, da ansonsten unerwünschte Nebenreaktionen ablaufen würden. '
 		'Zur Trennung beider Bereiche eignet sich eine kationenpermeable Membran. Auch der Gasraum muss vollständig voneinander getrennt werden. \n' 
-		'Wird Spannung auf die Elektroden gegeben laufen folgende Reaktionen ab: \n' 
-		'Kathode: 2H₂O + 2e⁻ → H₂↑ + 2OH⁻ \n' 
-		'Anode: 2NaCl → 2Na⁺ + Cl₂↑ + 2e⁻ \n' 
-		'Gesamt: 2H₂O + 2NaCl → H₂↑ + 2NaOH + Cl₂↑ ', 'gemerkt': false},
+		'Wird Spannung auf die Elektroden gegeben, laufen folgende Reaktionen ab: \n' 
+		'Kathode: 2 H₂O + 2 e⁻ → H₂↑ + 2 OH⁻ \n' 
+		'Anode: 2 NaCl → 2 Na⁺ + Cl₂↑ + 2 e⁻ \n' 
+		'Gesamt: 2 H₂O + 2 NaCl → H₂↑ + 2 NaOH + Cl₂↑ ', 'gemerkt': false},
 		
 		{'frage': 'Nachweise für Alkalimetalle im Labor',
-		'antwort': 'Im Labor werden Alkalimetalle meist durch eine Flammenfärbung nachgewießen. \n' 
-		'Dabei wird eine kleine Menge der Probe in eine Flamme gegeben. \n'
+		'antwort': 'Im Labor werden Alkalimetalle meist durch ihre charakteristische Flammenfärbung nachgewießen. \n' 
+		'Dabei wird eine kleine Menge der Probe in eine Brennerflamme gegeben. \n'
 		'Beim Erhitzen werden Elektronen angeregt, unter Photonenabgabe fallen sie in den Grundzustand zurück. '
 		'Die Lichtemission hat eine element-charakteristische Farbe. \n'
 		'Lithium: rot, Natrium: gelb, Kalium: violett, Rubidium: rot-violett, Caesium: blau-violett', 'gemerkt': false},
@@ -213,14 +213,14 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 
   'Erdalkalimetalle': [
 
-    {'frage': 'Die Erdalkalimetalle',
+		{'frage': 'Die Erdalkalimetalle',
 		'antwort': 'Die Erdalkalimetalle befinden sich in der zweiten Hauptgruppe (IUPAC Gruppe 2). '
-    'Diese Gruppe umfasst die Elemente Beryllium (Be), Magnesium (Mg), Calcium (Ca), Strontium (Sr), Barium (Ba) und Radium (Ra).', 'gemerkt': false},
+		'Diese Gruppe umfasst die Elemente Beryllium (Be), Magnesium (Mg), Calcium (Ca), Strontium (Sr), Barium (Ba) und Radium (Ra).', 'gemerkt': false},
 	
 		{'frage': 'Gruppeneigenschaften der Erdalkalimetalle',
-		'antwort': 'Alle Elemente der Erdalkalimetalle sind typische Metalle und liegen bevorzugt in der Oxidationsstufe +2 vor.\n'
-		'Erdalkalimetalle bilden Oxide mit Sauerstoff.\n'
-		'Sie reagieren mit Stickstoff zu Nitriden mit einer Summenformel von Me₃N₂.\n'
+		'antwort': 'Alle Elemente der Erdalkalimetalle sind typische Metalle und liegen bevorzugt mit der Oxidationszahl +2 vor.\n'
+		'Erdalkalimetalle (Me) bilden mit Sauerstoff Oxide (MeO). \n'
+		'Sie reagieren mit Stickstoff zu Nitriden mit der Formeleinheit Me₃N₂.\n'
 		'Einige Erdalkalimetalle bilden in Wasser Hydroxide aus. Me + H₂O → Me(OH)₂ + H₂↑\n'
 		'Mit steigender Ordnungszahl nimmt der basische Charakter der Hydroxide zu.\n'
 		'Mit steigender Ordnungszahl nimmt zudem die Stabilität der Carbonate und Nitrate zu.', 'gemerkt': false},
@@ -230,20 +230,20 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		'Beryllium: BeF₂ + Mg → Be + MgF₂\n'
 		'Barium: 3 BaO + 2 Al → Al₂O₃ + 3 Ba oder 3 BaO + Si → BaSiO₃ + 2 Ba\n'
 		'Magnesium, Calcium und Strontium werden durch Schmelzflusselektrolyse gewonnen. '
-		'Magnesium wird dabei aus MgCl₂, Calcium und Strontium ebenfalls aus den Chloriden in einer Mischung mit ihren Fluoriden gewonnen.', 'gemerkt': false},
+		'Magnesium wird dabei aus MgCl₂, Calcium und Strontium ebenfalls aus den Chloriden in einer Mischung mit ihren Fluoriden (als Flussmittel zum Herabsenken der erforderlichen Schmelztemperatur) gewonnen.', 'gemerkt': false},
 		
 		{'frage': 'Löslichkeit der Erdalkalimetall-Salze',
-		'antwort': 'Die Löslichkeit hängt von der Ionenladungsdichte der Erdalkalikationen ab. Je kleiner der Kationenradius bei gleicher Ladung, '
-		'desto stärker die Hydration und daher bessere Löslichkeit.\nDaher sind alle Nitrate und Chloride der Erdalkalimetalle gut in Wasser löslich. '
-		'Hingegen ihre Sulfate, Phosphate, Carbonate und Chromate meist schwer löslich sind. '
+		'antwort': 'Die Löslichkeit hängt von der Ladungsdichte der Erdalkalikationen ab. Je kleiner der Kationenradius bei gleicher Ladung, '
+		'desto stärker ist die Hydration und daher die Löslichkeit größer.\nDaher sind alle Nitrate und Chloride der Erdalkalimetalle gut in Wasser löslich. '
+		'Hingegen sind ihre Sulfate, Phosphate, Carbonate und Chromate meist schwer löslich. '
 		'Ausnahmen bilden hier Berylliumsulfat und Magnesiumsulfat, die gut löslich sind, '
 		'da die Kationen von Beryllium und Magnesium kleine Radien mit einer hohen Ladungsdichte aufweisen. ', 'gemerkt': false},
 		
 		{'frage': 'Die Rauchgasentschwefelung',
 		'antwort': 'Bei der Rauchgasentschwefelung wird das Schwefeldioxid (SO₂) aus dem Abgas fossiler Brennstoffe entfernt, '
-		'um nicht in die Atmosphäre frei gesetzt zu werden. Denn freigesetztes Schwefeldioxid reagiert mit Wasser zur Schwefeligen Säure.\n'
+		'um nicht in die Atmosphäre frei gesetzt zu werden, denn freigesetztes Schwefeldioxid reagiert mit Wasser zur Schwefeligen Säure.\n'
 		'SO₂ + H₂O → H₂SO₃\n'
-		'Schwefeldioxid ist die Hauptursache für Sauren Regen, der zum Absterben von Vegetation, der Zerstörung von Böden und der Ozeanversäuerung führt. \n'
+		'Schwefeldioxid ist die Hauptursache für sauren Regen, der zum Absterben von Vegetation, Zerstörung von Böden und zur Ozeanversäuerung führt. \n'
 		'Der Prozess der Entschwefelung beginnt mit einer wässrigen Aufschlämmung von Kalkstein (CaCO₃). '
 		'Das Rauchgas wird im Gegenstromprinzip durch die Kalkaufschlämmung geleitet. '
 		'In der Aufschlämmung reagiert das Schwefeldioxid mit dem Calciumcarbonat zu Calciumsulfit und weiter zum Calciumsulfat.\n'
@@ -258,7 +258,7 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 	
 		{'frage': 'Die Erdmetalle',
 		'antwort': 'Die Erdmetalle sind die Elemente der dritten Hauptgruppe (IUPAC Gruppe 13). Sie werden auch Triele oder Elemente der Borgruppe genannt. ' 
-		'Diese Gruppe umfasst die Elemente Bor (B), Aluminium (Al), Gallium (Ga), Indium (In), Thallium (Tl) und Nihonium (Nh).', 'gemerkt': false},
+		'Diese Gruppe umfasst die natürlich auftretenden Elemente Bor (B), Aluminium (Al), Gallium (Ga), Indium (In) und Thallium (Tl) sowie das nur synthetisch zugängliche Nihonium (Nh).', 'gemerkt': false},
 		
 		{'frage': 'Gruppeneigenschaften der Erdmetalle',
 		'antwort': 'Durch ihre Elektronenkonfiguration sind Erdmetalle sehr reaktiv. '
@@ -274,30 +274,30 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		'α-rhomboedrisches Bor: Kubisch-dichteste Packung von B₁₂-Ikosaedern, einfachste Modifikation mit hoher Symmetrie\n'
 		'α-tetragonales Bor: Hexagonal-dichteste Packung von B₁₂-Ikosaedern, enthält zusätzliche Boratome zwischen den Ikosaedern\n'
 		'β-rhomboedrisches Bor: Komplexe rhomboedrische Elementarzelle mit 105 Boratomen, Thermodynamisch stabilste Modifikation '
-		'bei Raumtemperatur, meist in technischen Anwendungen\n'
+		'bei Raumtemperatur, meist in technischen Anwendungen genutzt\n'
 		'β-tetragonales Bor: Sehr komplexe tetragonale Elementarzelle mit 190 Boratomen, selten', 'gemerkt': false},
 		
 		{'frage': 'Borane: Die Ausbildung von 3-Zentren-2-Elektronenbindungen',
 		'antwort': 'Borane sind Verbindungen aus Bor und Wasserstoff. Das einfachste Boran das BH₃ ist nicht synthetisierbar, '
-		'bei der Reduktion von Borverbindungen mit Wasserstoff erhält man ein Dimer: B₂H₆ Diboran. '
-		'Darin sind die beiden Boratome zwei Mal über je ein Wasserstoffatom verbunden.\n'
+		'bei der Reduktion von Borverbindungen mit Wasserstoff erhält man ein Dimer: B₂H₆ - Diboran. '
+		'Darin sind die beiden Boratome zwei Mal über je ein verbrückendes Wasserstoffatom verbunden.\n'
 		'BH₃ ist eine Elektronenmangelverbindung. Um drei Wasserstoffatome binden zu können, werden drei Orbitale benötigt. '
 		'Liegt Bor sp³-hybridisiert vor, bliebe ein Orbital vakant. Das vakante Orbital wäre energetisch niedriger wodurch BH₃ instabil ist. '
-		'Um alle Orbitale füllen zu können, bildet sich das Dimer oder höhere Borane aus.\n'
+		'Um alle Orbitale füllen zu können, bilden sich das Dimer oder auch höhere Borane aus.\n'
 		'Das Problem dabei ist, dass das vakante Orbital kein freies Elektronenpaar für die Bindung besitzt. '
-		'Die Bindung erfolgt, indem je BH₃ eine Bor-Wasserstoffbindung eine Bindung mit dem vakanten Orbital des anderen BH₃ eingeht. '
+		'Die Bindung erfolgt, indem je BH₃ eine Bor-Wasserstoffbindung mit dem vakanten Orbital des anderen BH₃ überlappt. '
 		'An den entstehenden bindenden Molekülorbitalen sind folgedessen je drei Atome und zwei Elektronen beteiligt. '
-		'Da die Bindung drei Atome (Zentren) und zwei Elektronen umfasst, nennt man sie 3-Zentren-2-Elektronenbindungen.', 'gemerkt': false},
+		'Da die Bindung drei Atome (Zentren) und zwei Elektronen umfasst, nennt man sie 3-Zentren-2-Elektronenbindungen oder 2-Elektronen-3-Zentrenbindungen.', 'gemerkt': false},
 		
 		{'frage': 'Das Bayer-Verfahren',
 		'antwort': 'Das Bayer-Verfahren ist das wichtigste Verfahren, zur industriellen Gewinnung von Aluminiumoxid.\n'
 		'Als erstes wird dazu Bauxit (Hauptbestandteile: AlO(OH) und Fe₂O₃) fein gemahlen und mit Natronlauge vermischt. '
-		'Bei bis zu 40 bar Druck und Temperaturen zwischen 100 °C und 320 °C bildet sich in einigen Stunden, unter rühren, '
-		'Natriumaluminat (Na[Al(OH)₄]) und ausfallendes Eisenhydroxid:\n AlO(OH) + Fe₂O₃ + NaOH → Na[Al(OH)₄] + Fe(OH)₃↓\n'
-		'Die überättigte Lauge wird auf 60 °C bis 70 °C abgekühlt, dadurch fällt Aluminiumhydroxid aus. '
-		'Durch das Animpfen mit kristallinem Aluminiumhydroxid wird das ganze beschleunigt: Na[Al(OH)₄] + Al(OH)₃ → Al(OH)₃↓ + NaOH\n'
-		'Das Aluminiumhydroxid wird auf ungefähr 1100 °C erhitzt, dabei spaltet sich Wasser ab (Calcinieren): Al(OH)₃ → Al₂O₃ + 3 H₂O\n'
-		'Aus dem im Bayer-Verfahren gewonnenen Aluminiumoxid, wird mittels Schmelzflusselektrolyse reines Aluminium produziert.', 'gemerkt': false},
+		'Bei bis zu 40 bar Druck und Temperaturen zwischen 100 °C und 320 °C bildet sich in einigen Stunden, unter Rühren, '
+		'Natriumaluminat (Na[Al(OH)₄]) und ausfallendes Eisenhydroxid:\nAlO(OH) + Fe₂O₃ + NaOH → Na[Al(OH)₄] + Fe(OH)₃↓\n'
+		'Die übersättigte Lauge wird auf 60 °C bis 70 °C abgekühlt, dabei fällt Aluminiumhydroxid aus. '
+		'Durch das Animpfen mit kristallinem Aluminiumhydroxid wird das Ganze beschleunigt: Na[Al(OH)₄] + Al(OH)₃ → Al(OH)₃↓ + NaOH\n'
+		'Das Aluminiumhydroxid wird auf etwa 1100 °C erhitzt, dabei spaltet sich Wasser ab (Calcinieren): Al(OH)₃ → Al₂O₃ + 3 H₂O\n'
+		'Aus dem im Bayer-Verfahren gewonnenen Aluminiumoxid wird mittels Schmelzflusselektrolyse reines Aluminium produziert.', 'gemerkt': false},
 		
 	],
 	
@@ -305,44 +305,44 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		
 		{'frage': 'Die Kohlenstoffgruppe',
 		'antwort': 'Die Kohlenstoffgruppe umfasst die Elemente der vierten Hauptgruppe (IUPAC Gruppe 14). '
-		'Diese Gruppe umfasst die Elemente Kohlenstoff (C), Silicium (Si), Germanium (Ge), Zinn (Sn), Blei (Pb) und Flerovium (Fl).', 'gemerkt': false},
+		'Diese Gruppe umfasst die natürlichen Elemente Kohlenstoff (C), Silicium (Si), Germanium (Ge), Zinn (Sn) und Blei (Pb) sowie das nur synthetisch zugängliche Flerovium (Fl).', 'gemerkt': false},
 		
 		{'frage': 'Die Gruppeneigenschaften der Kohlenstoffgruppe',
 		'antwort': 'Die Stabilität der Oxidationszahl +4 nimmt mit steigender Ordnungszahl ab -> Inert-Pair-Effekt stabilisiert +2\n'
 		'Die metallischen Eigenschaften nehmen von oben nach unten zu (Nichtmetall (C), Halbmetalle (Si, Ge), Metalle (Sn, Pb, Fl))\n'
-		'Die Ausbildung von Mehrfachbindungen nimmt von oben nach unten ab\n'
-		'Mit steigender Atomgröße nimmt die Fähigkeit mit sich selbst Ketten zu bilden ab.', 'gemerkt': false},
+		'Die Neigung zur Ausbildung von Mehrfachbindungen nimmt von oben nach unten ab\n'
+		'Mit steigender Atomgröße nimmt die Fähigkeit ab, mit sich selbst Ketten zu bilden.', 'gemerkt': false},
 		
 		{'frage': 'Die Allotropie von Kohlenstoff',
 		'antwort': 'Elementarer Kohlenstoff kommt in fünf verschiedenen Modifikationen vor:\n'
 		'Die hochmolekularen Formen (C_∞):\n'
-		'Graphit: Besteht aus ebenen sp²-hybridisierten Kohlenstoffschichten, Jede Schicht besteht aus planaren Hexagonen. '
+		'Graphit: Besteht aus ebenen sp²-hybridisierten Kohlenstoffschichten. Jede Schicht besteht aus planaren Hexagonen. '
 		'Die nicht hybridisierten p_z-Orbitale stehen senkrecht zu den Kohlenstoffschichten. '
-		'Diese p_z-Orbitale treten mit den p_z-Orbitalen der darüber und darunterliegenden Schicht in Wechselwirkung. '
-		'Die delokalisierten Elektronen der nicht hybridisierten p_z-Orbitale sind ursächlich für die Leitfähigkeit und die scharze Farbe.\n'
+		'Diese p_z-Orbitale treten mit den p_z-Orbitalen der darüber und darunterliegenden Schicht nicht in Wechselwirkung; die einzelnen Schichten werden nur durch van-der-Waals-Kräfte zusammengehalten. '
+		'Die delokalisierten Elektronen der nicht hybridisierten p_z-Orbitale sind ursächlich für die elektrische Leitfähigkeit entlang der einzelnen Schichten und für die schwarze Farbe (Wechselwirkung mit praktisch jeder Wellenlänge des sichtbaren Lichtes).\n'
 		'Diamant: Besteht aus sp³-hybridisiertem Kohlenstoff, der über Einfachbindungen tetraedrisch an vier weitere Kohlenstoffatome gebunden ist. '
 		'Die Bindungen führen zur großen Härte von Diamant. Da es keine delokalisierten Elektronen gibt, ist Diamant ein elektrischer Isolator.\n'
 		'Die niedermolekularen Formen (C_n):\n'
-		'Fullerene: Mehr oder weniger kugelförmige Modifikation aus meist 60 oder 70 Kohlenstoffatomen. '
-		'Innerhalb eines Fullerens sind die Atome in pentagonalen und hexagonalen Strukturen angeordnet.\n'
-		'Kohlenstoff-Nanoröhren: Zylindrisch gerollte Graphitschicht, die ein- oder mehrwändig auftreten. '
-		'Sie weisen eine hohe mechanische Festigkeit auf und sind gleichzeitig elastisch. '
+		'Fullerene: Mehr oder weniger kugelförmige Modifikation aus 60 oder mehr Kohlenstoffatomen. '
+		'Innerhalb eines Fullerens sind die Atome in pentagonalen und hexagonalen Ringen angeordnet.\n'
+		'Kohlenstoff-Nanoröhren: Zylindrisch gerollte Graphitschicht, die ein- oder mehrwändig auftreten kann. '
+		'Diese Röhren weisen hohe mechanische Festigkeit auf und sind gleichzeitig elastisch. '
 		'Je nach Struktur können sie auch metallische oder halbmetallische Leitfähigkeitseigenschaften aufweisen.\n'
-		'Graphen: Einzelne Schicht aus hexagonal angeordneten Kohlenstoffatomen.', 'gemerkt': false},
+		'Graphen: Einzelne Schicht aus hexagonal angeordneten Kohlenstoffatomen - eine einzelne Graphit-Lage.', 'gemerkt': false},
 		
 		{'frage': 'Die Darstellung von metallischem Silicium',
 		'antwort': 'Im elektrischen Ofen wird bei etwa 2000 °C Siliciumdioxid mit Kohle reduziert: SiO₂ + 2 C → Si + CO\n'
-		'Um ein Kilogramm Silicium herzustellen, werden 14 kWh elektrische Energie benötigt!\n'
-		'Das reduktiv gewonnene Silicium hat einen Reinheitsgrad von etwa 98% und liegt polykristallin vor. '
-		'Das Silicium kann in dieser Form für Solarzellen verwendet werden, für Computerchips ist es nicht zu verwenden.', 'gemerkt': false},
+		'Um ein Kilogramm Silicium herzustellen, werden 14 kWh elektrische Energie benötigt (das ist viel).\n'
+		'Das reduktiv gewonnene Silicium hat einen Reinheitsgrad von etwa 98 % und liegt polykristallin vor. '
+		'Das Silicium kann in dieser Form für Solarzellen verwendet werden, für Computerchips ist es noch nicht geeignet.', 'gemerkt': false},
 		
 		{'frage': 'Kristallziehverfahren nach Czochralski',
 		'antwort': 'Metallisches Silicium wird in einem Tiegel geschmolzen. '
 		'Ein kleiner Silicium-Einkristall wird als Impfling in die Schmelze eingetaucht. '
-		'Der Impfkristall wird sehr lamgsam unter drehen nach oben gezogen, dabei entsteht ein homogener Einkristall mit hohem Reinheitsgrad.\n'
+		'Der Impfkristall wird sehr langsam unter Drehen nach oben gezogen, dabei entsteht ein homogener Einkristall mit hohem Reinheitsgrad.\n'
 		'Um den Einkristall weiter aufzureinigen, sodass er in der Halbleiterindustrie verwendet werden kann, '
-		'wird er lamgsam waagerecht durch einen Ofen transportiert. Dabei drinngen die Verunreinigungen an die Oberfläche '
-		'und wandern an das Ende des Kristalls. Dieser hochreine Kristall wird in Stücke gesägt '
+		'wird er langsam waagerecht durch einen Ofen transportiert. Dabei sammeln sich wegen der Schmelzpunkterniedrigung die Verunreinigungen in der heißen Zone '
+		'und wandern so letztendlich an das Ende des Kristalls. Das Endstück, in dem sich die Verunreinigungen angesammelt haben, kann dann erneut der Grob-Reinigung unterworfen und erneut eingesetzt werden, und der restliche, dann hochreine Kristall wird zur Weiterverarbeitung in Wafer gesägt '
 		'und für die Herstellung von Computerchips verwendet.', 'gemerkt': false},
 		
 		{'frage': 'Siliciumdioxid (SiO₂)',
@@ -350,7 +350,7 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		'Diese Tetraeder sind über gemeinsame Sauerstoffatome zu einem dreidimensionalen Netzwerk verbunden.\n'
 		'Siliciumdioxid gibt es in amorpher und in kristalliner Form.\n'
 		'Amorphe Form: Silicagel/Kieselgel: keine Fernordnung, nur lokale Tetraederstruktur, große Oberfläche (~700 m²/g), '
-		'Wasserstoffbrückenbindung durch reaktive OH-Gruppen möglich\n'
+		'Wasserstoffbrückenbindung durch reaktive OH-Gruppen an der Oberfläche sind möglich\n'
 		'Herstellung mittels Flammenpyrolyse bei etwa 1000 °C: SiCl₄ + 2 H₂ + O₂ → SiO₂ + 4 HCl\n'
 		'Kristalline Form: Quarz (α-Quarz): regelmäßige Fernordnung, UV transparent bis 150 nm, piezoelektrisch', 'gemerkt': false},
 		
@@ -359,30 +359,31 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		
 		
 		{'frage': 'Die Pentele',
-		'antwort': 'Die Pentele sind die Elemente der fünften Hauptgruppe (IUPAC Gruppe 15). Sie werden auch als Elemente der Stickstoffgruppe bezeichent. '
-		'Die Gruppe umfasst die Elemente Stickstoff (N), Phosphor (P), Arsen (As), Antimon (Sb), Bismut (Bi), Moscovium (Mc).', 'gemerkt': false},
+		'antwort': 'Die Pentele sind die Elemente der fünften Hauptgruppe (IUPAC Gruppe 15). Sie werden auch als Elemente der Stickstoffgruppe bezeichnet, in der englischsprachigen Literatur auch als Pnicogene oder Pnictogene. '
+		'Die Gruppe umfasst die natürlichen Elemente Stickstoff (N), Phosphor (P), Arsen (As), Antimon (Sb) und Bismut (Bi) sowie das nur synthetisch erhältliche Moscovium (Mc).', 'gemerkt': false},
 		
 		{'frage': 'Die Gruppeneigenschaften der Pentele',
 		'antwort': 'Die Stabilität der Oxidationszahl +3 nimmt mit steigender Ordnungszahl zu (Oxidationsstufe +5 wird instabiler), '
-		'sodass die Stärke als Oxidationsmittel steigt -> Inert-Pair-Effekt stabilisiert\n'
+		'sodass bei höchstmöglicher Oxidationszahl die Stärke als Oxidationsmittel steigt -> Inert-Pair-Effekt stabilisiert\n'
 		'Die Elektronegativität nimmt innerhalb der Gruppe von oben nach unten ab.\n'
 		'Die metallischen Eigenschaften nehmen von oben nach unten zu (Nichtmetalle (N, P), Halbmetalle (As, Sb), Metall (Bi))\n', 'gemerkt': false},
 		
 		{'frage': 'Das Haber-Bosch-Verfahren',
 		'antwort': 'Das Haber-Bosch-Verfahren ist das wichtigste großtechnische Verfahren zur Synthese von Ammoniak (NH₃) aus elementarem Stickstoff und Wasserstoff.\n'
 		'Hierzu müssen zunächst beide Gase in hoher Reinheit gewonnen werden:\n'
-		'Stickstoff: Stickstoff als Hauptbestandteil der Luft, wird aus ihr abgetrennt. '
+		'Stickstoff: Stickstoff, als Hauptbestandteil der Luft, wird aus dieser abgetrennt. '
 		'Dafür wird Luft durch mehrfaches Komprimieren und Expandieren verflüssigt. '
 		'Im Anschluss wird die verflüssigte Luft mehrfach verdampft und wieder kondensiert, dadurch lässt sich die Luft in ihre einzelnen Gase auftrennen.\n'
 		'Wasserstoff: Wasserstoff wird durch die Reduktion von Wasser gewonnen. Technisch können dafür zwei verschiedene Verfahren verwendet werden:\n'
 		'Kohlenstoff als Reduktionsmittel: C + H₂O ⇌ CO + H₂\n'
 		'Steam-Reforming-Verfahren: CH₄ + H₂O ⇌ CO + 3 H₂\n'
 		'Das bei der Wasserstoffgewinnung erhaltene Kohlenmonoxid würde das Eisen im Katalysator bei der Ammoniksynthese vergiften. '
-		'Daher wird es zu Kohlendioxid umgewandelt: CO + H₂O ⇌ CO₂ + H₂ und mit Wasser ausgewaschen.\n'
-		'Die folgende Synthese des Ammoniak nach: N₂ + 3 H₂ ⇌ 2 NH₃, ist technisch anspruchsvoll. '
-		'Da es sich um eine Gleichgewischtsreaktion handelt, müssen die Bedingungen eingestellt werden, '
+		'Daher wird es zu Kohlendioxid umgewandelt: CO + H₂O ⇌ CO₂ + H₂ \n' 
+		'Anschließend wird es mit Wasser ausgewaschen.\n'
+		'Die nachfolgende Synthese des Ammoniaks nach: N₂ + 3 H₂ ⇌ 2 NH₃, ist technisch anspruchsvoll. '
+		'Da es sich um eine Gleichgewichtsreaktion handelt, müssen die Bedingungen entsprechend eingestellt werden, '
 		'um eine möglichst hohe Produktausbeute zu erhalten. Da es sich um eine exotherme Reaktion handelt, '
-		'wäre eine möglichst geringe Temperatur vorteilhaft, allerdings wird ein Katalysator (Fe₃O₄) zur Gleichgewischtseinstellung in vertretbarer Zeit benötigt. '
+		'wäre eine möglichst geringe Temperatur vorteilhaft, allerdings wird ein Katalysator (Fe₃O₄) zur Gleichgewichtseinstellung in vertretbarer Zeit benötigt. '
 		'Dieser benötigt aber eine höhere Reaktionstemperatur, um effizient zu arbeiten, daher findet die Reaktion meist bei 500 °C statt. '
 		'Das Gleichgewicht wird auch über einen Druck von 30 MPa eingestellt, denn die Reaktion findet unter Volumenabnahme statt. '
 		'Dadurch verschiebt sich das Gleichgewischt auf die Produktseite.\n'
@@ -390,45 +391,45 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		
 		{'frage': 'Stickstoffverbindungen',
 		'antwort': 'Durch die Vielfalt der möglichen Oxidationszahlen des Stickstoffs (von -3 bis +5) sind verschiedene Verbindungsklassen möglich:\n'
-		'Stickoxide: (z. B. N₂O, NO, NO₂, N₂O₃, N₂O₅) manche Stickoxide liegen auch dimerisiert vor (z. B. N₂O₂  N₂O₄). '
+		'Stickoxide: z. B. N₂O, NO, NO₂, N₂O₃, N₂O₅, manche Stickoxide liegen auch dimerisiert vor (z. B. N₂O₂  N₂O₄). '
 		'Stickoxide sind starke Oxidationsmittel, einige sind giftig.\n'
-		'Säuren und ihre Salze: Salpetersäure (HNO₃), salpetrige Säure (HNO₂), Nitrate (NO₃-), Nitrite (NO₂-), Stickstoffwasserstoffsäure (HN₃), Azide (N₃-)', 'gemerkt': false},
+		'Säuren und ihre Salze: Salpetersäure (HNO₃), Nitrate (NO₃-), salpetrige Säure (HNO₂), Nitrite (NO₂-), Stickstoffwasserstoffsäure (HN₃), Azide (N₃-)', 'gemerkt': false},
 		
 		{'frage': 'Phosphorverbindungen',
 		'antwort': 'Phosphor kann verschiedene Verbindungsklassen eingehen:\n'
 		'Wasserstoffverbindungen: Phosphan (PH₃) und Diphosphan (P₂H₄), sehr giftiges Gas (Knoblauchgeruch)\n'
-		'Oxide: (z. B. P₄O₆, P₄O₈, P₄O₁₀) bilden mit Wasser Säuren aus, reagieren stark mit Wasser (Trockenmittel)\n'
-		'Säuren: (z. B. Phosphorsäure (H₃PO₄), phosphorige Säure (H₃PO₃), hypophosphorige Säure (H₃PO₂)) auch Di- oder Polymerisation der Säuren möglich', 'gemerkt': false},
+		'Oxide: (vor allem P₄O₆, P₄O₁₀) bilden mit Wasser Säuren, reagieren stark mit Wasser (Trockenmittel)\n'
+		'Säuren: (z. B. Phosphorsäure (H₃PO₄), phosphorige Säure (H₃PO₃), hypophosphorige Säure (H₃PO₂)) auch Kondensation zu Di- oder Polysäuren möglich', 'gemerkt': false},
 	
 	],
 	'Chalkogene' : [
 	
 		{'frage': 'Die Chalkogene',
-		'antwort': 'Die Chalkogene sind die Elemente der sechsten Hauptgruppe (IUPAC Gruppe 16). Sie werden auch als Elemente der Sauerstoffgruppe bezeichent. '
-		'Diese Gruppe umfasst die Elemente Sauerstoff (O), Schwefel (S), Selen (Se), Tellur (Te), Polonium (Po), Livermorium (Lv).', 'gemerkt': false},
+		'antwort': 'Die Chalkogene sind die Elemente der sechsten Hauptgruppe (IUPAC Gruppe 16). Sie werden auch als Elemente der Sauerstoffgruppe bezeichnet. '
+		'Diese Gruppe umfasst die natürlichen Elemente Sauerstoff (O), Schwefel (S), Selen (Se), Tellur (Te) und Polonium (Po) sowie das nur synthetisch erhältliche Livermorium (Lv).', 'gemerkt': false},
 		
 		{'frage': 'Die Gruppeneigenschaften der Chalkogene',
 		'antwort': 'Die metallischen Eigenschaften nehmen von oben nach unten zu (Nichtmetalle (O, S), Halbmetalle (Se, Te, Po)\n'
-		'Doppelbindungsregel: Schwefel, Selen und Tellur bilden bevorzugt Ketten und Ringe, da ihre σ-Bindungen stabiler als die π-Bindungen sind.\n'
-		'Bevorzugte Oxidationszahlen in dieser Gruppe sind -2, +4 und +6.', 'gemerkt': false},
+		'Doppelbindungsregel: Schwefel, Selen und Tellur bilden bevorzugt Ketten und Ringe, da ihre σ-Bindungen deutlich stabiler als die π-Bindungen sind.\n'
+		'Bevorzugte Oxidationszahlen in dieser Gruppe sind -2, +4 und +6, sowie beim sehr elektronegativen Sauerstoff und auch beim Schwefel -2', 'gemerkt': false},
 		
 		{'frage': 'Allotropie und Polymorphie',
 		'antwort': 'Allotropie: Element bildet Moleküle unterschiedlicher Größe mit sich selbst.\n'
-		'Polymorphie: Molekül kann an pysikalische Bedingungen anpassend unterschiedliche Strukturen ausbilden.', 'gemerkt': false},
+		'Polymorphie: Molekül kann, von den physikalische Bedingungen abhängig, unterschiedliche Strukturen ausbilden.', 'gemerkt': false},
 		
 		{'frage': 'Das Frasch-Verfahren',
 		'antwort': 'Mit dem Frasch-Verfahren wird elementarer Schwefel aus unterirdischen Lagerstätten gefördert. '
 		'Wasserdampf wird über Rohre in die unterirdische Lagerstätte gepumpt. In Folge dessen schmilzt der Schwefel auf. '
-		'Über ein weiteres Rohr wird der flüssige Schwefel an die Oberfläche transportiert und anschließend auskristallisieren lassen.', 'gemerkt': false},
+		'Über ein weiteres Rohr wird der flüssige Schwefel an die Oberfläche transportiert, an der er anschließend auskristallisiert.', 'gemerkt': false},
 		
 		{'frage': 'Der Claus-Prozess',
-		'antwort': 'Mit dem Claus-Prozess wird Schwefel, aus dem bei der Verbrennung fossiler Energieträger entstandenen Schwefelwasserstoff, gewonnen. '
+		'antwort': 'Mit dem Claus-Prozess wird Schwefel aus dem bei der Verbrennung fossiler Energieträger entstandenen Schwefelwasserstoff, gewonnen. '
 		'Im ersten Schritt wird der Schwefelwasserstoff (H₂S) mit Sauerstoff verbrannt. Dabei wird Wärmeenergie gewonnen. 2 H₂S + 3 O₂ → 2 SO₂ + 2 H₂O\n'
 		'In einem Ofen mit eisenhaltigem Aluminiumoxid-Katalysator reagiert der restliche Schwefelwasserstoff '
 		'mit dem Schwefeldioxid in einer Synproportionierungsreaktion zu elementarem Schwefel und Wasser. 2 H₂S + SO₂ → 3 S + 2 H₂O', 'gemerkt': false},
 		
 		{'frage': 'Schwefelverbindungen',
-		'antwort': 'Die bevorzugten Oxidationszahlen des Schwefels sind -2, +4 und +6. Dadurch sind verschiedene Verbindugsklassen möglich:\n'
+		'antwort': 'Die bevorzugten Oxidationszahlen des Schwefels sind -2, +4 und +6. Dadurch sind verschiedene Verbindungsklassen möglich:\n'
 		'Schwefeloxide: Schwefeldioxid (SO₂) und Schwefeltrioxid (SO₃) beide Gase können zur Herstellung ihrer Säuren verwendet werden.\n'
 		'Säuren: Schwefelsäure (H₂SO₄) und schweflige Säure (H₂SO₃), auch gerne dimerisiert oder beliebige andersweitige Verbindungen aus H, S, O.', 'gemerkt': false},
 	],
@@ -436,17 +437,17 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 	
 		{'frage': 'Die Halogene',
 		'antwort': 'Die Halogene sind die Elemente der siebten Hauptgruppe (IUPAC Gruppe 17). '
-		'Diese Gruppe umfasst die Elemente Fluor (F), Chlor (Cl), Brom (Br), Jod (I), Astat (At), Tenness (Ts).', 'gemerkt': false},
+		'Diese Gruppe umfasst die naürlich auftretenden Elemente Fluor (F), Chlor (Cl), Brom (Br), Jod (I) und Astat (At) sowie das nur synthetisch zugängliche Tenness (Ts).', 'gemerkt': false},
 		
 		{'frage': 'Die Gruppeneigenschaften der Halogene',
-		'antwort': 'Halogene sind sehr reaktionsfreudig und kommen deshalb nicht elementar vor.\n'
+		'antwort': 'Halogene sind sehr reaktionsfreudig und kommen deshalb in der Natur nicht elementar vor.\n'
 		'Halogene lassen sich besonders leicht ionisieren.\n'
 		'Sie bilden zusammen mit Elementen der ersten und zweiten Hauptgruppe Salze.\n'
 		'Mit der Ausnahme von Fluorwasserstoff (HF) reagieren alle Halogenwasserstoffe als starke Säuren.', 'gemerkt': false},
 		
 		{'frage': 'Die Fluorwasserstoffelektrolyse',
 		'antwort': 'Elementares Fluor wird durch Elektrolyse einer Mischung aus Kaliumfluorid und Fluorwasserstoff gewonnen. '
-		'Dabei entsteht an einer Kohlenstoff-Anode des gasförmige Fluor (F₂) und an der Stahl-Kathode Wasserstoff (H₂).', 'gemerkt': false},
+		'Dabei entsteht an einer Kohlenstoff-Anode das gasförmige Fluor (F₂) und an der Stahl-Kathode Wasserstoff (H₂).', 'gemerkt': false},
 		
 		{'frage': 'Die Chloralkali-Elektrolyse',
 		'antwort': 'Elementares Chlor wird durch die Elektrolyse einer wässrigen Natriumchloridlösung gewonnen. '
@@ -460,7 +461,7 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 	
 		{'frage': 'Die Edelgase',
 		'antwort': 'Die Edelgase sind die Elemente der achten Hauptgruppe (IUPAC 18). '
-		'Diese Gruppe umfasst die Elemente Helium (He), Neon (Ne), Argon (Ar), Krypton (Kr), Xenon (Xe), Radon (Rn) und Oganesson (Og).', 'gemerkt': false},
+		'Diese Gruppe umfasst die natürlichen Elemente Helium (He), Neon (Ne), Argon (Ar), Krypton (Kr), Xenon (Xe) und Radon (Rn) sowie das nur synthetisch zugängliche Oganesson (Og).', 'gemerkt': false},
 		
 		{'frage': 'Vorkommen der Edelgase',
 		'antwort': 'Edelgase kommen meist elementar vor, durch ihre große Reaktionsträgheit. So ist Helium ein Bestandteil des Erdgases. '
@@ -468,13 +469,13 @@ class _LernkartenAnsichtState extends State<LernkartenAnsicht> {
 		'Radon tritt in einigen Regionen aus der Erde. Es ist ein Zerfallsprodukt von Radium.', 'gemerkt': false},
 		
 		{'frage': 'Edelgashalogenide',
-		'antwort': 'Um Edelgase größerer Masse doch zu einer Reaktion zu zwingen sind hohe Drücke und Temperaturen notwendig. '
+		'antwort': 'Um Edelgase größerer Masse doch zu einer Reaktion zu zwingen, sind hohe Drücke und Temperaturen notwendig. '
 		'Am besten eignet sich das sehr elektronegative Fluor als Reaktionspartner. Damit lässt sich Xenon bis zum XeF₆ oxidieren. '
-		'Auch Krypton und Radon konnten bereits mit Flour mehrfach oxidiert werden.', 'gemerkt': false},
+		'Auch Krypton und Radon konnten bereits mit Fluor mehrfach oxidiert werden.', 'gemerkt': false},
 		
 		{'frage': 'Edelgasoxide',
-		'antwort': 'Eine Oxidation von Xenon durch Sauerstoff konnte erfolgreich durchgeführt werden. '
-		'Möglich ist hierbei XeO₃ und XeO₄.', 'gemerkt': false},
+		'antwort': 'Die Oxidation von Xenon durch Sauerstoff konnte erfolgreich durchgeführt werden. '
+		'Möglich sind hierbei XeO₃ und XeO₄.', 'gemerkt': false},
 	],
 
 
@@ -739,7 +740,7 @@ class _QuizAnsichtState extends State<QuizAnsicht> {
 	  	'richtigeAntwort': 3,
 	  },
     {	'frage': 'Welcher Energie entspricht der Massendefekt?',
-		'optionen': ['Elektronenabstoßungsenergie', 'Difussionsenergie', 'Beschleunigungsenergie', 'Kernbindungsenergie' ],
+		'optionen': ['Elektronenabstoßungsenergie', 'Diffusionsenergie', 'Beschleunigungsenergie', 'Kernbindungsenergie' ],
 		'richtigeAntwort': 3,
 	},
 	{	'frage': 'Welche Wertigkeit besitzt eine kubisch-raumzentrierte Elementarzelle?',
@@ -786,7 +787,7 @@ class _QuizAnsichtState extends State<QuizAnsicht> {
 		'optionen': ['Smog', 'Saurer Regen', 'Chemtrails', '5G' ],
 		'richtigeAntwort': 1,
 	},
-  {	'frage': 'Welches der folgenden Elementen gehört nicht in die Gruppe der Erdmetalle?',
+  {	'frage': 'Welches der folgenden Elemente gehört nicht in die Gruppe der Erdmetalle?',
 		'optionen': ['Aluminium', 'Bor', 'Eisen', 'Thallium' ],
 		'richtigeAntwort': 2,
 	},
@@ -806,7 +807,7 @@ class _QuizAnsichtState extends State<QuizAnsicht> {
 		'optionen': ['Silicium', 'Germanium', 'Blei', 'Quecksilber' ],
 		'richtigeAntwort': 3,
 	},
-	{	'frage': 'Wie nennt man die meist kugelförmigen Modifikationen aus Pentagonen/ Hexagonen des Kohlenstoffs?',
+	{	'frage': 'Wie nennt man, die meist kugelförmigen Modifikationen aus Pentagonen/ Hexagonen des Kohlenstoffs?',
 		'optionen': ['Fullerene', 'Diamant', 'Nanotubes', 'Graphen' ],
 		'richtigeAntwort': 0,
 	},
@@ -814,7 +815,7 @@ class _QuizAnsichtState extends State<QuizAnsicht> {
 		'optionen': ['Schmelzflusselektrolyse', 'Reduktion', 'Bergbau', 'Elektrolyse' ],
 		'richtigeAntwort': 1,
 	},
-  {	'frage': 'Welches der folegenden Elementen ist kein Element der Stickstoffgruppe?',
+  {	'frage': 'Welches der folgenden Elemente ist kein Element der Stickstoffgruppe?',
 		'optionen': ['Phosphor', 'Antimon', 'Arsen', 'Selen' ],
 		'richtigeAntwort': 3,
 	},
@@ -846,7 +847,7 @@ class _QuizAnsichtState extends State<QuizAnsicht> {
 		'optionen': ['Frasch-Verfahren', 'Solvay-Verfahren', 'Claus-Verfahren', 'Haber-Bosch-Verfahren' ],
 		'richtigeAntwort': 2,
 	},
-	{	'frage': 'Welches der folgenden Elementen ist kein Element der Halogene?',
+	{	'frage': 'Welches der folgenden Elemente ist kein Element der Halogene?',
 		'optionen': ['Chlor', 'Fluor', 'Jod', 'Argon' ],
 		'richtigeAntwort': 3,
 	},
@@ -1076,6 +1077,10 @@ Zusätzlich wurden folgende Quellen verwendet:
 - Aluminium Deutschland, "Bayer-Verfahren", [online] https://www.aluminiumdeutschland.de/lexikon/begriff/bayer-verfahren/ , entnommen: 15.12.25
             
 Technische Umsetzung KI gestützt
+
+Fachkorrektur: Dr. Ulf Ritgen
+
+Entwicklung und Umsetzung: Theresa Gottwald
 			''',
             style: TextStyle(fontSize: 16),
           ),
